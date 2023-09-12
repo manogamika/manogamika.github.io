@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="mario.png">
 	</head>
 	<style>
-  /* CSS untuk latar belakang */
+
   body {
     background-image: url('bg.png');
     background-size: cover;
@@ -16,17 +16,23 @@
   }
 </style>
 <style>
-  /* CSS untuk mengubah font menjadi Times New Roman */
+
   body, h1, h2, p, ul, li {
     font-family: 'Times New Roman', serif;
   }
 </style>
 
+
 		<body class="is-preload">
 				<div id="wrapper">
+				
 						<header id="header">
+					
+
 							<div class="content">
+							
 								<div class="inner">
+								
 								<img src="mario.png" alt="Halo Image" style="max-width: 34%; height: auto;">
 									<h2>↓▼UwU▼↓</h2>
 									<p>click or touch a menu below to see
@@ -49,6 +55,7 @@
 										<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
 										<li><a href="https://t.me/manogamika" class="icon brands fa-telegram"></a></li>
 										<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+		<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a></li>
 										<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
 
 
@@ -57,8 +64,45 @@
 									</ul>
 									<p class="copyright" id="moqbit"></p>
 								</div>
-
+<p>ramdio</p>
+<p>↓▼OwO▼↓</p>
+<p>click below to play</p>
 							</div>
+
+<button id="playBtn">Putar</button>
+
+
+<audio id="myAudio" controls style="display: none;">
+  <source src="blue_canvas.mp3" type="audio/mp3">
+  Maaf, browser Anda tidak mendukung pemutaran audio.
+</audio>
+
+<script>
+var source = "blue_canvas.mp3"; 
+
+var audio = document.getElementById("myAudio");
+var playBtn = document.getElementById("playBtn");
+
+audio.addEventListener("canplaythrough", function () {
+
+  playBtn.disabled = false;
+  audio.play();
+});
+
+playBtn.addEventListener("click", function () {
+  if (audio.paused) {
+
+    audio.play();
+    playBtn.textContent = "Berhenti";
+  } else {
+   
+    audio.pause();
+    playBtn.textContent = "Putar";
+  }
+});
+
+</script>
+
 
 						</header>
 						<br>
@@ -79,6 +123,7 @@
 										<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
 										<li><a href="https://t.me/manogamika" class="icon brands fa-telegram"></a></li>
 										<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+										<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a>
 										<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
 									</ul>
 							</article>
@@ -130,7 +175,6 @@
       document.getElementById('moqbit').textContent = `manogamika @ ${year}`;
     }
 
-    // Initial display
     displayYear();
   </script>
 
