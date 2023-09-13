@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<title>manogamika</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="logo.png">
+	</head>
+	<style>
+
+  body {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+</style>
+<style>
+@font-face {
+  font-family: 'MyFont';
+  src: url('font.ttf');
+}
+
+body, h1, h2, p, ul, li {
+  font-family: 'MyFont', sans-serif;
+}
+</style>
+
+
+		<body class="is-preload">
+		
+				<div id="wrapper">
+				
+						<header id="header">
+					
+
+							<div class="content">
+							
+								<div class="inner">
+								  
+								  <br>
+								<img src="mario.png" alt="Halo Image" style="max-width: 34%; height: auto;">
+									<h2>↓▼UwU▼↓</h2>
+									<p>click or touch a menu below to see
+									<br><br>
+									↓▼OwO▼↓
+									</p>
+									<nav>
+										<ul>
+										<li><a href="#me">► Proyek</a></li>
+										<li><a href="#contact">► kontak</a></li>
+										<li><a href="#me">► Tentang saya</a></li>
+										</ul>
+									</nav>
+
+							<br>
+
+									<ul class="icons">
+										<li><a href="https://facebook.com/manogamika" class="icon brands fa-facebook"></a></li>
+										<li><a href="https://instagram.com/manogamika" class="icon brands fa-instagram"></a></li>
+										<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
+										<li><a href="https://t.me/manogamika" class="icon brands fa-telegram"></a></li>
+										<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+		<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a></li>
+										<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
+
+
+
+
+									</ul>
+									<p class="copyright" id="moqbit"></p>
+								</div>
+<p>ramdio</p>
+<p>↓▼OwO▼↓</p>
+
+							</div>
+
+<button id="playBtn">Putar</button>
+
+
+<audio id="myAudio" controls style="display: none;">
+  <source src="Ding Ding Pakdinding (DJ Yasmin Remix).mp3" type="audio/mp3">
+  Maaf, browser Anda tidak mendukung pemutaran audio.
+</audio>
+
+<script>
+var source = "blue_canvas.mp3"; 
+
+var audio = document.getElementById("myAudio");
+var playBtn = document.getElementById("playBtn");
+
+audio.addEventListener("canplaythrough", function () {
+
+  playBtn.disabled = false;
+  audio.play();
+});
+
+playBtn.addEventListener("click", function () {
+  if (audio.paused) {
+
+    audio.play();
+    playBtn.textContent = "Berhenti";
+  } else {
+   
+    audio.pause();
+    playBtn.textContent = "Putar";
+  }
+});
+
+</script>
+
+
+						</header>
+						<br>
+
+			</head>
+		<body>
+
+
+
+
+
+					<div id="main">
+							<article id="contact" style="text-align: center;">
+								<h2 class="major">contact</h2>
+								<ul class="icons">
+										<li><a href="https://facebook.com/manogamika" class="icon brands fa-facebook"></a></li>
+										<li><a href="https://instagram.com/manogamika" class="icon brands fa-instagram"></a></li>
+										<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
+										<li><a href="https://t.me/manogamika" class="icon brands fa-telegram"></a></li>
+										<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+										<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a>
+										<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
+									</ul>
+							</article>
+
+							<article id="me">
+								<h2 class="major">About Me</h2>
+
+								<div class="inner" style="text-align: center;">
+
+								 <img src="mario.png" alt="Halo Image" style="max-width: 100%; height: auto;">
+
+
+
+
+
+
+							</article>
+
+
+
+								</div>
+
+
+					
+						
+				
+
+			</div>
+	
+			<div id="bg"></div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+	</body>
+
+
+
+
+
+
+  <script>
+  
+    function displayYear() {
+      const now = new Date();
+      const year = now.getFullYear();
+      document.getElementById('moqbit').textContent = `manogamika @ ${year}`;
+    }
+
+    displayYear();
+  </script>
+
+
+</html>
