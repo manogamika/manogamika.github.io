@@ -16,6 +16,37 @@
   }
 </style>
 <style>
+			.typing-animation {
+					display: inline-block;
+					overflow: hidden;
+					white-space: nowrap;
+					font-size: 24px;
+					border-right: 2px solid #000;
+					animation: typing 4s steps(20) infinite, blink-caret 0.75s step-end infinite;
+			}
+
+			@keyframes typing {
+					0% {
+							width: 0;
+					}
+					50% {
+							width: 100%;
+					}
+					100% {
+							width: 0;
+					}
+			}
+
+			@keyframes blink-caret {
+					0%, 100% {
+							border-color: transparent;
+					}
+					50% {
+							border-color: #000;
+					}
+			}
+	</style>
+<style>
 @font-face {
   font-family: 'MyFont';
   src: url('font.ttf');
@@ -28,47 +59,66 @@ body, h1, h2, p, ul, li {
 
 
 		<body class="is-preload">
-		
+
 				<div id="wrapper">
-				
+
 						<header id="header">
-					
+
 
 							<div class="content">
-							
+
 								<div class="inner">
-								  
+
 								  <br>
 								<img src="logo.png" alt="Halo Image" style="max-width: 34%; height: auto;">
-									<h2> >_manogamika</h2>
-								
-									<nav>
+								<p><span class="typing-animation">Hello World_</span></p>
+			<script>
+			    const textArray = ["Glad to see you come here", "Click the menu below..."," to see something..","hello world ^_^"];
+			    let currentTextIndex = 0;
+			    const animatedText = document.querySelector(".typing-animation");
+
+			    function changeText() {
+			        animatedText.textContent = textArray[currentTextIndex];
+			        currentTextIndex = (currentTextIndex + 1) % textArray.length;
+			    }
+
+			    setInterval(changeText, 4000); // Change text every 4 seconds
+			</script>
+			<nav>
+
 										<ul>
-										<li><a href="">► project</a></li>
-									
-										
-										<li><a href="mailto:moqbit@gmail.com">► contact</a></li>
-										<li><a href="#about">► about</a></li>
+
+
+											<li>
+											    <a href="#project" onclick="playSoundAndNavigate('#project')">► project</a>
+											</li>
+											<li>
+											    <a href="mailto:moqbit@gmail.com" onclick="playSoundAndNavigate('#contact')">► contact</a>
+											</li>
+											<li>
+													<a href="#donate" onclick="playSoundAndNavigate('#donate')">► donate</a>
+											</li>
+											<li>
+											    <a href="#about" onclick="playSoundAndNavigate('#about')">► about</a>
+											</li>
+
 										</ul>
 									</nav>
 
 							<br>
 
 									<ul class="icons">
-									<li><a href="https://discord.gg/2H92P2gb" class="icon brands fa-discord"></a>
+									<li><a href="https://discord.gg/rAPx3N4AXE" class="icon brands fa-discord"></a>
 									<li><a href="https://t.me/manogamika" class="icon brands fa-telegram"></a></li>
-											<li><a href="https://facebook.com/manogamika" class="icon brands fa-facebook"></a></li>
-										<li><a href="https://instagram.com/manogamika" class="icon brands fa-instagram"></a></li>
-										<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
-										
-										<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
-										<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a>
-			
-										
-										<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
-										
+									<li><a href="https://facebook.com/manogamika" class="icon brands fa-facebook"></a></li>
+									<li><a href="https://instagram.com/manogamika" class="icon brands fa-instagram"></a></li>
+									<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
+									<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+									<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a>
+									<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
 
-					
+
+
 
 
 
@@ -95,82 +145,31 @@ body, h1, h2, p, ul, li {
 
 
 					<div id="main">
-					
-							
-							<article id="project">
-								<h2 class="major">Project</h2>
-
-								<div class="inner" style="text-align: center;">
-the project is basically voluntary yet not easy to do..but i believe its maybe make changes for the next generation.. for the better future..>_^
-						<br>
-								 <a href="https://github.com/sman4muarateweh/evoting2023"><button><span>► evoting</span></button></a>
-								 <a href="https://github.com/sman4muarateweh/evoting2023"><button><span>► realistic-fiction</span></button></a>
-				<a href="#project-wikipedia-contributor"><button><span>► wikipedia-contributor</span></button></a>
-	
-				
-								 <br><br><br>
-								 
-<a href="#"><button><span>◄ Back</span></button></a>
 
 
 
 
 
-							</article>
-							
-														<article id="project-wikipedia-contributor">
-								<h2 class="major">Project - wikipedia contributor</h2>
-
-								<div class="inner" style="text-align: center;">
-
-						
-		<p>if you wikipedia,well u know it,but even do you even cares who's have contribute it?</p>
-		<p>but if u care and want to contribute click link below and ask them how to contribute</p>
-				
-								 <br><br><br>
-								 
-<a href="#project"><button><span>◄ Back</span></button></a>
 
 
-
-
-
-							</article>
-																					<article id="project-4-repairs">
-								<h2 class="major">Project - 4repairs</h2>
-
-								<div class="inner" style="text-align: center;">
-
-						
-		<p>a project that we will help u ,about u computer like reinstall it OS,etc</p>
-		<p>click here to contact the contributor</p>
-				
-								 <br><br><br>
-								 
-<a href="#project"><button><span>◄ Back</span></button></a>
-
-
-
-
-
-							</article>
-							
-	
-							
 														<article id="about">
-								<h3 class="major"><img src="logo.png" alt="Halo Image" style="max-width: 10%; height: auto;">what's >_moqbit ?</h3>
+								<h3 class="major"><img src="logo.png" alt="Halo Image" style="max-width: 10%; height: auto;">what's >_manogamika ?</h3>
 
 								<div class="inner" style="text-align: center;">
-							
-					
+
+
 <p>
 								an independent entity created by logion, has fragile heart if handled with fragility. aimed at enhancing education through various means such as books, games, and more, in accordance with the interests and feedback of learners, and relies solely on existing donations for its sustenance.
 
 
 </p>
+<p>
+一个由logion创造的独立实体，如果用脆弱的方式来对待，它的内心也是脆弱的。旨在根据学习者的兴趣和反馈，通过书籍、游戏等各种方式加强教育，并完全依靠现有的捐款来维持。
+</p>
 
-<a href="#"><button><span>◄ Back</span></button></a>
-<a href="#donate"><button><span>► donate</span></button></a>
+<a href="#" onclick="playSoundAndNavigate('#')"><button><span>◄ Back</span></button></a>
+<a href="#donate" onclick="playSoundAndNavigate('#donate')"><button><span>► donate</span></button></a>
+
 
 
 
@@ -182,26 +181,69 @@ the project is basically voluntary yet not easy to do..but i believe its maybe m
 
 							</article>
 
+							<article id="project">
+								<h2 class="major">project</h2>
 
-						
+								<div class="inner" style="text-align: center;"><p>
+
+	wip,the project is basically voluntary yet not easy to do..but i believe its maybe make changes for the next generation.. for the better future..i suppose..
+
+</p>
+<p>
+
+	对不起，但这将很快来临，这个项目基本上是自愿的，但并不容易做...但我相信它可能会为下一代带来改变...为更美好的未来...我想是这样的
+</p>
+
+
+<a href="#" onclick="playSoundAndNavigate('#')"><button><span>◄ Back</span></button></a>
+<a href="#donate" onclick="playSoundAndNavigate('#donate')"><button><span>► donate</span></button></a>
+
+
+
+
+							</article>
+
 
 
 								</div>
 
 
-					
-						
-				
+
+
+
 
 			</div>
-	
+			<button id="playButton"><span></span></button>
+
+			<audio id="myAudio">
+
+	         <source src="c.mp3" type="audio/mpeg">
+
+	     </audio>
+			 <script>
+
+			 const audio = document.getElementById("myAudio");
+			 const navLink = document.getElementById("navLink");
+
+
+			 function playSoundAndNavigate() {
+
+					 audio.play();
+
+					 navLink.style.display = "block";
+			 }
+
+
+			 const playButton = document.getElementById("playButton");
+			 playButton.addEventListener("click", playSoundAndNavigate);
+	 </script>
 			<div id="bg"></div>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
+
 	</body>
 
 
@@ -210,11 +252,11 @@ the project is basically voluntary yet not easy to do..but i believe its maybe m
 
 
   <script>
-  
+
     function displayYear() {
       const now = new Date();
       const year = now.getFullYear();
-      document.getElementById('moqbit').textContent = ` >_moqbit @ ${year}`;
+      document.getElementById('moqbit').textContent = ` >_moqbit / manogamika @ ${year}`;
     }
 
     displayYear();
