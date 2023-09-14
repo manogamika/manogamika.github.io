@@ -71,9 +71,9 @@ body, h1, h2, p, ul, li {
 
 								  <br>
 								<img src="logo.png" alt="Halo Image" style="max-width: 34%; height: auto;">
-								<p><span class="typing-animation">Hello World_</span></p>
+								<p><span class="typing-animation">Hello World,welcome_</span></p>
 			<script>
-			    const textArray = ["welcome,nice to meet you", "Click the menu below to see.."];
+			    const textArray = ["nice to meet you_", "glad u here ^_^"];
 			    let currentTextIndex = 0;
 			    const animatedText = document.querySelector(".typing-animation");
 
@@ -85,7 +85,7 @@ body, h1, h2, p, ul, li {
 			    setInterval(changeText, 4000);
 			</script>
 			<nav>
-
+	<p>click the menu below to see_></p>
 										<ul>
 
 
@@ -113,7 +113,7 @@ body, h1, h2, p, ul, li {
 									<li><a href="https://facebook.com/manogamika" class="icon brands fa-facebook"></a></li>
 									<li><a href="https://instagram.com/manogamika" class="icon brands fa-instagram"></a></li>
 									<li><a href="https://youtube.com/@manogamika" class="icon brands fa-youtube"></a></li>
-									<li><a href="https://twitter.com/manogamika/" class="icon brands fa-twitter"></a></li>
+
 									<li><a href="https://twitch.com/manogamika" class="icon brands fa-twitch"></a>
 									<li><a href="https://www.linkedin.com/in/manogamika/" class="icon brands fa-linkedin"></a></li>
 
@@ -243,7 +243,16 @@ body, h1, h2, p, ul, li {
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
 
+		    function displayYear() {
+		      const now = new Date();
+		      const year = now.getFullYear();
+		      document.getElementById('moqbit').textContent = ` >_manogamika @ ${year}`;
+		    }
+
+		    displayYear();
+		  </script>
 	</body>
 
 
@@ -251,16 +260,6 @@ body, h1, h2, p, ul, li {
 
 
 
-  <script>
-
-    function displayYear() {
-      const now = new Date();
-      const year = now.getFullYear();
-      document.getElementById('moqbit').textContent = ` >_moqbit / manogamika @ ${year}`;
-    }
-
-    displayYear();
-  </script>
 
 
 </html>
