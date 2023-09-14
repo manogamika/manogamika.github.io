@@ -73,7 +73,7 @@ body, h1, h2, p, ul, li {
 								<img src="logo.png" alt="Halo Image" style="max-width: 34%; height: auto;">
 								<p><span class="typing-animation">Hello World_</span></p>
 			<script>
-			    const textArray = ["Glad to see you come here", "Click the menu below..."," to see something..","hello world ^_^"];
+			    const textArray = ["Glad to see you come here", "Click the menu below to see.."];
 			    let currentTextIndex = 0;
 			    const animatedText = document.querySelector(".typing-animation");
 
@@ -82,7 +82,7 @@ body, h1, h2, p, ul, li {
 			        currentTextIndex = (currentTextIndex + 1) % textArray.length;
 			    }
 
-			    setInterval(changeText, 4000); // Change text every 4 seconds
+			    setInterval(changeText, 4000);
 			</script>
 			<nav>
 
